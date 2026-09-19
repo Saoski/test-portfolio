@@ -1,4 +1,3 @@
-import React from "react";
 import mac_and_cheese from "../assets/mac_and_cheese.jpg";
 import Image from "next/image";
 import Card from "./Card";
