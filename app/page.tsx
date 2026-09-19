@@ -4,7 +4,6 @@ import ProjectCard from "./components/ProjectCard";
 import macAndCheese from "./assets/mac_and_cheese.jpg";
 import quackbox from "./assets/quackbox.png";
 import { Skill } from "./components/SkillTag";
-import NavBar from "./components/NavBar";
 
 export default function Home() {
     const macAndCheeseDescription =
@@ -14,33 +13,34 @@ export default function Home() {
 
     return (
         <>
-            <div className="m-8"/>
-            <Divider text="About Me" id="about"/>
+            <div className="m-8" />
+            <Divider text="About Me" id="about" />
             <AboutMe />
-            <Divider text="Projects" id="projects"/>
+            <Divider text="Projects" id="projects" />
             <div className="grid grid-cols-2 gap-6 px-5 items-stretch">
                 <ProjectCard
                     title="Mac and Cheese"
                     description={macAndCheeseDescription}
-                    image_src={macAndCheese}
+                    imageSrc={macAndCheese}
                     skills={[Skill.TypeScript, Skill.MacAndCheese]}
                 />
                 <ProjectCard
                     title={"QuackBox"}
                     description={otherProjectDescription}
-                    image_src={quackbox}
+                    imageSrc={quackbox}
+                    skills={[Skill.Python, Skill.Rust]}
+                    githubLink="https://github.com/rit-coms/COMS-Console"
+                />
+                <ProjectCard
+                    title={"QuackBox"}
+                    description={otherProjectDescription}
+                    imageSrc={quackbox}
                     skills={[Skill.Python, Skill.Rust]}
                 />
                 <ProjectCard
                     title={"QuackBox"}
                     description={otherProjectDescription}
-                    image_src={quackbox}
-                    skills={[Skill.Python, Skill.Rust]}
-                />
-                <ProjectCard
-                    title={"QuackBox"}
-                    description={otherProjectDescription}
-                    image_src={quackbox}
+                    imageSrc={quackbox}
                     skills={[Skill.Python, Skill.Rust]}
                 />
             </div>
