@@ -8,6 +8,7 @@ export enum Skill {
     Python = "Python",
     RobotFramework = "Robot Framework",
     MacAndCheese = "Mac and Cheese",
+    Rust = "Rust"
 }
 
 interface SkillProps {
@@ -20,6 +21,7 @@ export default function SkillTag({ skill }: SkillProps) {
         [Skill.Python]: reactIcon,
         [Skill.RobotFramework]: reactIcon,
         [Skill.MacAndCheese]: macAndCheese,
+        [Skill.Rust]: reactIcon
     };
 
     const skillSrc = getSkillImageSrc[skill];

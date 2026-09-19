@@ -17,11 +17,11 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     return (
         <Card>
-            <Image src={image_src} alt="Me eating mac and cheese." height={100}/>
-            <div>
+            <Image src={image_src} alt="Project image."  width={150} className="h-fit self-center"/>
+            <div className="pl-3">
                 <h2>{title}</h2>
-                <p>{description}</p>
-                <div className="flex gap-3">
+                <p className="max-h-40 overflow-y-auto">{description}</p>
+                <div className="flex gap-3 pt-3">
                     {skills.map((skill) => (
                         <SkillTag skill={skill} key={skill} />
                     ))}
