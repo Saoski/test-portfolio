@@ -29,6 +29,18 @@ export default function Home() {
                     image_src={quackbox}
                     skills={[Skill.Python, Skill.Rust]}
                 />
+                <ProjectCard
+                    title={"QuackBox"}
+                    description={otherProjectDescription}
+                    image_src={quackbox}
+                    skills={[Skill.Python, Skill.Rust]}
+                />
+                <ProjectCard
+                    title={"QuackBox"}
+                    description={otherProjectDescription}
+                    image_src={quackbox}
+                    skills={[Skill.Python, Skill.Rust]}
+                />
             </div>
             <Divider />
             <Divider />
