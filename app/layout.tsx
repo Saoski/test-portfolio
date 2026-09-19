@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-    return <body className="min-h-full flex flex-col">{children}</body>;
+    return (
+        <html>
+            <body className="min-h-full flex flex-col bg-primary-bg">{children}</body>
+        </html>
+    );
 }
