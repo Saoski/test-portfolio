@@ -27,7 +27,7 @@ export default function SkillTag({ skill }: SkillProps) {
     const skillSrc = getSkillImageSrc[skill];
 
     return (
-        <div className="flex gap-1 items-center text-primary-fg bg-gray-700 size-fit py-1 px-3 rounded-3xl">
+        <div className="flex gap-1 items-center text-primary-fg bg-secondary size-fit py-1 px-3 rounded-3xl">
             <div className="relative size-5 overflow-hidden rounded-md">
                 <Image src={skillSrc} alt={skill} fill sizes="20px" />
             </div>
