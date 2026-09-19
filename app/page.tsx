@@ -44,8 +44,6 @@ export default function Home() {
                     skills={[Skill.Python, Skill.Rust]}
                 />
             </div>
-            <Divider />
-            <Divider />
         </>
     );
 }
