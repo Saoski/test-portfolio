@@ -4,6 +4,7 @@ import ProjectCard from "./components/ProjectCard";
 import macAndCheese from "./assets/mac_and_cheese.jpg";
 import quackbox from "./assets/quackbox.png";
 import { Skill } from "./components/SkillTag";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
     const macAndCheeseDescription =
@@ -13,10 +14,11 @@ export default function Home() {
 
     return (
         <>
-            <Divider text="About Me" />
+            <div className="m-8"/>
+            <Divider text="About Me" id="about"/>
             <AboutMe />
-            <Divider text="Projects" />
-            <div className="grid grid-cols-2 gap-6 p-5 items-stretch">
+            <Divider text="Projects" id="projects"/>
+            <div className="grid grid-cols-2 gap-6 px-5 items-stretch">
                 <ProjectCard
                     title="Mac and Cheese"
                     description={macAndCheeseDescription}
