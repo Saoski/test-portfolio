@@ -6,6 +6,7 @@ import quackbox from "./assets/quackbox.png";
 import placeholderImg from "./assets/placeholder.jpg";
 import { Skill } from "./components/SkillTag";
 import ExperienceCard from "./components/ExperienceCard";
+import ContactCard from "./components/ContactCard";
 
 export default function Home() {
     const macAndCheeseDescription =
@@ -47,7 +48,7 @@ export default function Home() {
                 />
             </div>
             <Divider text="My Experience" />
-            <div className="flex flex-col items-center gap-6">
+            <div className="flex flex-col items-center gap-6" id="experience">
                 <ExperienceCard
                     logoSrc={placeholderImg}
                     logoAlt={"Radionix brand logo"}
@@ -73,6 +74,9 @@ export default function Home() {
                     endDate={"Present"}
                 />
             </div>
+            <Divider text="Contact Me" />
+            <ContactCard />
+            <div className="m-8" />
         </>
     );
 }
