@@ -3,7 +3,9 @@ import Divider from "./components/Divider";
 import ProjectCard from "./components/ProjectCard";
 import macAndCheese from "./assets/mac_and_cheese.jpg";
 import quackbox from "./assets/quackbox.png";
+import placeholderImg from "./assets/placeholder.jpg";
 import { Skill } from "./components/SkillTag";
+import ExperienceCard from "./components/ExperienceCard";
 
 export default function Home() {
     const macAndCheeseDescription =
@@ -16,7 +18,7 @@ export default function Home() {
             <div className="m-8" />
             <Divider text="About Me" id="about" />
             <AboutMe />
-            <Divider text="Projects" id="projects" />
+            <Divider text="My Projects" id="projects" />
             <div className="grid grid-cols-2 gap-6 px-5 items-stretch">
                 <ProjectCard
                     title="Mac and Cheese"
@@ -42,6 +44,33 @@ export default function Home() {
                     description={otherProjectDescription}
                     imageSrc={quackbox}
                     skills={[Skill.Python, Skill.Rust]}
+                />
+            </div>
+            <Divider text="My Experience" />
+            <div className="flex flex-col items-center gap-6">
+                <ExperienceCard
+                    logoSrc={placeholderImg}
+                    logoAlt={"Radionix brand logo"}
+                    jobTitle={"Software Testing Automation"}
+                    organization={"Radionix"}
+                    startDate={"June 2026"}
+                    endDate={"Present"}
+                />
+                <ExperienceCard
+                    logoSrc={placeholderImg}
+                    logoAlt={"RIT logo"}
+                    jobTitle={"Student Lab Intructor"}
+                    organization={"Rochester Institute of Technology"}
+                    startDate={"August 2025"}
+                    endDate={"May 2026"}
+                />
+                <ExperienceCard
+                    logoSrc={placeholderImg}
+                    logoAlt={"Mac and cheese"}
+                    jobTitle={"Master Chef"}
+                    organization={"Society of Mac and Cheese"}
+                    startDate={"October 2005"}
+                    endDate={"Present"}
                 />
             </div>
         </>
